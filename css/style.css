@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+}
+
+body {
+  font-family: "Georama", sans-serif;
+}
+
+.products {
+  display: flex;
+}
+
+.product {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.product:hover {
+  filter: brightness(0.8);
+}
+
+.product .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.product .price {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.product:not(:last-child) {
+  margin-right: 10px;
+}
